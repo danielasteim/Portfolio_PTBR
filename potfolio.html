@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniela Steim | Data Engineer</title>
+
+  <!-- Fonts (can adjust later) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Language Toggle -->
+  <div class="lang-toggle">
+    <button data-lang="en" class="active">ENGLISH</button>
+    <span>|</span>
+    <button data-lang="pt">PORTUGUÊS</button>
+  </div>
+
+  <div class="layout">
+
+    <!-- LEFT: PROFILE CARD -->
+    
+    <!-- MENU -->
+    <main class="main-area">
+
+      <!-- PROFILE CARD -->
+        <div class="profile">
+            <div class="profile-info">
+                <div class="profile-photo">
+                    <!-- image via CSS background or <img> -->
+                </div>
+
+                    <div class="profile-description">
+                    <h1 class="name">Daniela Steim</h1>
+                    <p class="role" data-i18n="role"></p>
+                    <p class="summary" data-i18n="summary"></p>
+                    <ul class="core-skills" data-i18n-list="skills"></ul>
+                </div>
+            </div>
+
+            <div class="profile-links">
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                <a href="assets/cv/Daniela_Steim_CV.pdf" target="_blank">CV</a>
+            </div>
+
+        </div>
+
+      <!-- SKILL MENU -->
+       <div class="skills">
+            <nav class="skills-menu">
+                <button data-category="dashboards">Dashboards</button>
+                <button data-category="analysis">Analysis</button>
+                <button data-category="pipelines">Pipelines</button>
+                <button data-category="spreadsheets">Spreadsheets</button>
+                <button data-category="coding">Computer engineering</button>
+                <div class="skills-list">
+
+                </div>
+            </nav>
+
+        </div>
+
+      <!-- SLIDING PANEL -->
+        <div class="panel" id="panel">
+
+            <header class="panel-header">
+                <h2 class="panel-title"></h2>
+                <button class="panel-close" aria-label="Close panel">×</button>
+            </header>
+
+            <div class="panel-content">
+            <!-- Projects injected via JS -->
+            </div>
+
+        </div>
+
+    </main>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/lang.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,100 @@
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #eae6f5;
+  background-color: #080121;
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      #4a1985,
+      transparent 40%
+    ),
+    linear-gradient(
+      135deg,
+      #080121,
+      #4a1985
+    );
+  min-height: 100vh;
+  display: flex;
+}
+
+.lang-toggle {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  opacity: 0.85;
+}
+
+.lang-toggle button {
+  background: none;
+  border: none;
+  color: #bfb8ff;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.lang-toggle button.active {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* =========================
+   LAYOUT BASE
+========================= */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  width: 100%;
+  height: 100vh
+
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+
+  padding: 96px 4vw 0;
+}
+
+
+.main-area {
+  width: 100%;
+  height: 80%;
+
+  display: grid;
+  grid-template-columns: 300px 300px 1fr;
+  gap: 0px;
+  background: none;
+}
+
+.profile {
+  grid-column: 1;
+  background:
+    linear-gradient(
+      90deg,
+      #4a1985,
+      #080121
+    );
+}
+
+.skills {
+  grid-column: 2;
+  background:
+    linear-gradient(
+      90deg,
+      #080121,
+      #4a1985
+    );
+}
+
+.panel {
+  grid-column: 3;
+  background:
+    linear-gradient(
+      90deg,
+      #4a1985,
+      #080121
+    );
+}
