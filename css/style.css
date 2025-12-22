@@ -83,17 +83,38 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 5px;
 }
 
 .profile-photo {
   width: 50%;
-  height: 30%;
+  height: 50%;
   background: var(--color-3);
   background: radial-gradient(circle, var(--color-3) 0, var(--color-1) 100%);
   margin-top: 30px;
 }
 
+.profile-description {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    text-align: center;
+}
+
+.profile-description h3 {
+    font-size: 15px;
+    padding: 0px;
+}
+
+.profile-description p {
+    font-size: 8px;
+    line-height: 1.4;
+    padding: 0px 10px;
+}
+
+.summary {
+    text-align: justify;
+    text-justify: inter-word;
+}
 .profile-links {
     display: flex;
     flex-direction: column;
