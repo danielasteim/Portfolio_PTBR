@@ -1,7 +1,7 @@
 const content = {
   en: {
     profile: {
-      role: "Computer Engineer | Data Analyst<",
+      role: "Computer Engineer | Data Analyst",
       summary: "Organized, proactive and highly logical, with a fast learning curve and a creative approach to problem-solving. I aim to help companies structure, analyze and leverage their data to build innovative solutions, optimize workflows and automate processes efficiently.",
       skills: "Python | SQL | Pipelines | Power Bi | Excel"
     },
